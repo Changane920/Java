@@ -1,0 +1,15 @@
+package Operators;
+
+public class Operator6 {
+	public static void main(String[] args) {
+		ReverseMethod();
+	}
+	public static void ReverseMethod() {
+		int num = 12345;
+		int num1,num2;
+
+		for(int i = 2; i > 0; i--) {
+			System.out.println(i);
+		}
+	}
+}

@@ -1,0 +1,12 @@
+
+public class Operator {
+	public static void main(String[] args) {
+		float num1 = 5.0f;
+		float num2 = 2;
+		float result = num1 % num2;
+		if(result == 1) {
+			result %= result;
+		}
+		System.out.println(result);
+	}
+}

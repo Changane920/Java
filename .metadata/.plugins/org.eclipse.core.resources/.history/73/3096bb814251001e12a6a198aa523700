@@ -1,0 +1,14 @@
+
+public class Operator {
+	public static void main(String[] args) {
+		int sum = 1 + 2;
+		int multi = 1 * 2;
+		int[] array = new int[5];
+		array[0] = sum;
+		array[1] = multi;
+		for (int i : array) {
+			System.out.println(i);
+		}
+		
+	}
+}
