@@ -1,20 +1,19 @@
 package Operators;
 
-public class Operator6 {
+class Operator6 {
+	//reverse number
 	public static void main(String[] args) {
-		ReverseMethod();
-	}
-	public static void ReverseMethod() {
-		int num = 12345;		
-		int[] array = new int[5];
+		int num = 123;
+		int num1,num2,num3;
 		
-		for(int i = 4; i >= 0; i--) {
-			array[i] = num%10;
-			num = num / 10;
-		}
+		num1 = (num % 10) * 100;
+		num /= 10;
 		
-		int result = array[0] + array[3];
+		num2 = (num % 10) * 10;
+		num /= 10;
 		
-		System.out.println("Result: " + result);
+		num3 = num;
+		
+		System.out.println("Reverse number is " + (num1 + num2 + num3));
 	}
 }

@@ -1,0 +1,21 @@
+package Operators;
+
+public class Test {
+	public static void main(String[] args) {
+		final int max = 100;
+		//can't assign another value to max
+		//max = 12;
+		System.out.println(max);
+		
+		for (int l = 0; l < 5; l++) {
+			for(int i = 0; i < 3; i++) {
+				System.out.print("+");
+				for(int a = 0; a < 5; a++) {
+					System.out.print("o");
+				}
+				System.out.println("+");
+			}
+			System.out.println(" space ");
+		}
+	}
+}

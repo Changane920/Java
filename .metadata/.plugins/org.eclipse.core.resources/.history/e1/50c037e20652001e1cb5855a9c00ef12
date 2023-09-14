@@ -1,0 +1,9 @@
+package Operators;
+
+public class Test {
+	public static void main(String[] args) {
+		final int max = 15;
+		System.out.println(max);
+		
+	}
+}
