@@ -1,0 +1,28 @@
+package Conditional_Statement;
+
+public class IF_ELSE_IF_EG {
+	public static void main(String[] args) {
+		int grade = 49;
+		
+		// if mark is greater than 80 is A
+		if(grade >= 80) {
+			System.out.println("Totoal Mark: " + grade + ". Grade A");
+		} 
+		// if mark is between 70 and 79 is B
+		else if(grade >= 70 && grade <= 79) {
+			System.out.println("Total Mark: " + grade + ". Grade B.");
+		}
+		// if mark is between 60 and 69 is C
+		else if(grade >= 60 && grade <= 69) {
+			System.out.println("Totoal Mark: " + grade + ". Grade C");
+		}
+		// if mark is between 50 and 59 is D
+		else if(grade >= 50 && grade <= 59) {
+			System.out.println("Total Mark: " + grade + ". Grade D.");
+		}
+		// if mark less than 50 is E
+		else {
+			System.out.println("Total Mark: " + grade + ". Grade E.");
+		}
+	}
+}

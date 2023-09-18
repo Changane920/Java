@@ -1,0 +1,14 @@
+package Conditional_Statement;
+
+public class IF_ELSE_Ternary_Operator {
+	public static void main(String[] args) {
+		int num1 = 10;
+		int num2 = 20;
+		
+		int sum = num1 + num2;
+		int multi = num1 * num2;
+		
+		int result = (num2 > num1) ? sum : multi;
+		System.out.println(result);
+	}
+}
