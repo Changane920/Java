@@ -1,0 +1,9 @@
+package FL_EX;
+
+public class FL_EX_15 {
+	public static void main(String[] args) {
+		int num = 15;
+		
+		
+	}
+}

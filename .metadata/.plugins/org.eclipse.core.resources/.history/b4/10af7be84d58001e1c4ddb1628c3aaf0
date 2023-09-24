@@ -1,0 +1,15 @@
+package N_FL_EX;
+
+public class N_FL_EX_8 {
+	public static void main(String[] args) {
+		for(int row = 1; row <= 5; row++) {
+			for(int digit = 6 - row; digit >= 1; digit--) {
+				System.out.print(digit);
+			}
+			for(int space = 0; space <= 4; space++) {
+				System.out.print(" ");
+			}
+			System.out.println();
+		}
+	}
+}

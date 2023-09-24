@@ -1,0 +1,16 @@
+package N_FL_EX;
+
+public class N_FL_EX_17 {
+	public static void main(String[] args) {
+		int count = 0;
+		for(int row = 1; row <= 5; row++) {
+			for(int star = 1; star <= row; star++) {
+				count++;
+				if(count%2 != 0) {
+					System.out.print("* ");
+				}
+			}
+			System.out.println();
+		}
+	}
+}

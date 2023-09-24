@@ -6,7 +6,18 @@
     <fullyQualifiedTypeName name="Conditional_Statement.Switch_Case_EG"/>
     <fullyQualifiedTypeName name="java.awt.GraphicsDevice"/>
     <fullyQualifiedTypeName name="javax.swing.text.html.HTMLDocument.HTMLReader.IsindexAction"/>
-    <fullyQualifiedTypeName name="java.time.chrono.MinguoChronology"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="java.util.concurrent.CountDownLatch"/>
+    <fullyQualifiedTypeName name="java.time.chrono.MinguoChronology"/>
+    <fullyQualifiedTypeName name="java.lang.Package"/>
+    <fullyQualifiedTypeName name="javax.swing.event.TreeWillExpandListener"/>
+    <fullyQualifiedTypeName name="java.lang.Number"/>
+    <fullyQualifiedTypeName name="java.io.InterruptedIOException"/>
+    <fullyQualifiedTypeName name="javax.naming.spi.DirStateFactory.Result"/>
+    <fullyQualifiedTypeName name="java.lang.LayerInstantiationException"/>
+    <fullyQualifiedTypeName name="javax.security.auth.kerberos.KerberosCredMessage"/>
+    <fullyQualifiedTypeName name="javax.crypto.NoSuchPaddingException"/>
+    <fullyQualifiedTypeName name="javax.management.ImmutableDescriptor"/>
+    <fullyQualifiedTypeName name="java.util.FormatFlagsConversionMismatchException"/>
 </qualifiedTypeNameHistroy>

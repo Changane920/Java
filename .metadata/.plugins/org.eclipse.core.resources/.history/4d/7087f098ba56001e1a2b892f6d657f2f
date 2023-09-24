@@ -1,0 +1,41 @@
+package FL_EX;
+
+public class FL_EX_15 {
+	public static void main(String[] args) {
+		//check prime number
+		int num = 5;
+		boolean flag = false;
+		
+		if(num == 1) {
+			System.out.println(num + " is not a prime number.");
+		}
+		else {
+			for(int i = 2; i <= num/2; ++i) {
+				if(num % i == 0) {
+					flag = true;
+					break;
+				}
+				if(!flag) {
+					System.out.println(num + " is a prime number.\n");
+					break;
+				} 
+				else {
+					System.out.println(num + " is not a prime number.\n");
+				}
+			}		
+		}
+
+		//wrong logic
+		System.out.println("another way to check prime number");
+		for(int k = 0; k <= num/2; k++) {
+			if(num % 2 == 0 || num % 3 == 0) {
+				System.out.println(num + " is not a prime number.");
+				break;
+			}
+			else {
+				System.out.println(num + " is a prime number.");
+				break;
+			}
+		}	
+	}
+}

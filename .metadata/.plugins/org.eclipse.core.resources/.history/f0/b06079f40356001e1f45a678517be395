@@ -1,0 +1,12 @@
+package FL_EX;
+
+public class FL_EX_5 {
+	public static void main(String[] args) {
+		for(char ch = 'a'; ch <= 'z'; ch++) {
+			System.out.print(ch + ",");
+			if(ch == 'z') {
+				System.out.println(ch);
+			}
+		}
+	}
+}

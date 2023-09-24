@@ -1,0 +1,11 @@
+package WL_EG;
+
+public class WL_EG_2 {
+	public static void main(String[] args) {
+		int num = 35;
+		while (num > 0) {
+			System.out.print(num + " ");
+			num /= 2;
+		}
+	}
+}

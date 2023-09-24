@@ -1,0 +1,12 @@
+package N_FL_EX;
+
+public class N_FL_EX_19 {
+	public static void main(String[] args) {
+		for(int row = 1; row <= 8; row++) {
+			for(char alpha = 'A'; alpha >= row; alpha++) {
+				System.out.print(alpha);
+			}
+			System.out.println();
+		}
+	}
+}

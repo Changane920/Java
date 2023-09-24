@@ -1,0 +1,23 @@
+package N_FL_EX;
+
+public class N_FL_EX_20 {
+	public static void main(String[] args) {
+		char alpha = 'A';
+		int num = 69;
+		int num2 = 64;
+		for(int row = 1; row <= 5; row++) {
+				for(char word = alpha; word <= num; word++) {
+					System.out.print(word + " ");
+				}
+				num--;
+			System.out.println();
+		}
+		for(int row = 1; row <= 5; row++) {
+			for(char word = alpha; word <= num2; word++) {
+				System.out.println(word + " ");
+			}
+			num++;
+			System.out.println();
+		}
+	}
+}

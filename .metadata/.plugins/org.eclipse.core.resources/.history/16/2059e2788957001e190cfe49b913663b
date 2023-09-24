@@ -1,0 +1,20 @@
+package N_FL_EG;
+
+public class N_FL_EG_5 {
+	public static void main(String[] args) {
+		for(int i = 5; i >= 1; i--) {
+			for(int j = 1; j <= i; j++) {
+				System.out.print(j + " ");
+			}
+			System.out.println();
+		}
+		
+		System.out.println("Test");
+		for(int a = 1; a >= 9; a++) {
+			for(int b = a; j >= b; b++) {
+				System.out.print(b + " ");
+			}
+			System.out.println();
+		}
+	}
+}
