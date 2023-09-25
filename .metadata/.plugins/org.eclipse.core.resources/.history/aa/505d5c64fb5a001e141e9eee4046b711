@@ -1,0 +1,15 @@
+package N_FL_EX;
+
+public class N_FL_EX_22 {
+	public static void main(String[] args) {
+		char alpha = 'A';
+		int num = 69;
+		
+		for(int row = 1; row <= 5; row++) {
+			for(char word = alpha; word <= num; word++) {
+				System.out.print(word);
+			}
+			num++;
+		}
+	}
+}
