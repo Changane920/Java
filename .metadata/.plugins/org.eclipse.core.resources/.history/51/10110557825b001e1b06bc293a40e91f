@@ -1,0 +1,29 @@
+package string_eg;
+
+import java.util.Scanner;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class Check_Email {
+	public static void main(String[] args) {
+		boolean flag = false;
+		Matcher m = null;
+		
+		while(flag = false) {
+			Scanner input = new Scanner(System.in);
+			System.out.println("Enter your email!");
+			
+			String regex = "^[0-9a-zA-Z_-.]+@[a-ZA-Z.]$";
+			Pattern p = Pattern.compile(regex);
+			m = p.matcher(regex);
+			
+			if(m.matches()) {
+				System.out.println("Valid!");
+			}
+			else {
+				System.out.println("Unvalid!");
+			}			
+		}
+		
+	}
+}

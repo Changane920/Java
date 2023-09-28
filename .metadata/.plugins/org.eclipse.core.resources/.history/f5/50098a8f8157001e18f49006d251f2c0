@@ -1,7 +1,0 @@
-package For_Loop;
-
-public class N_FL_EG {
-	public static void main(String[] args) {
-		System.out.println(" " + "\tn" + "\tn^2" + "\tn^3" + "\tn^4");
-	}
-}

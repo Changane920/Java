@@ -1,0 +1,16 @@
+package Method_EG;
+
+public class M_EG_1 {
+	public static void main(String[] args) {
+		print();
+		System.out.println(sum(5,5));
+	}
+	
+	static void print() {
+		System.out.println("Hello World!");
+	}
+	
+	static int sum(int x, int y) {
+		return x + y;
+	}
+}

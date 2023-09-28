@@ -22,4 +22,12 @@ public class N_FL_EX_21 {
 			System.out.println();
 		}
 	}
+	/*output
+	 *     A 
+	 *    ABA 
+	 *   ABCBA 
+	 *  ABCDCBA 
+	 * ABCDEDCBA
+	 */
+
 }

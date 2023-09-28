@@ -1,0 +1,15 @@
+package Method_EG;
+
+import java.util.Scanner;
+
+public class DelimeterWithScanner {
+	public static void main(String[] args) {
+		String input = "10 fish 20 fish green fish white fish";
+		Scanner sc = new Scanner(input).useDelimiter("\\s*fish\s*");
+		System.out.println(sc.nextInt());
+		System.out.println(sc.nextInt());
+		System.out.println(sc.next());
+		System.out.println(sc.next());
+		sc.close();
+	}
+}

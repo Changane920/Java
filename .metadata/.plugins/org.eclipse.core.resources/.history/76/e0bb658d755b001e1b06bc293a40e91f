@@ -1,0 +1,16 @@
+package string_eg;
+
+public class String_Method {
+	public static void main(String[] args) {
+		String s1 = "Hello World!";
+		String s2 = "Maung Maung";
+		String s3 = "maung maung";
+		String text = s1.concat(s2);
+		if(s2.equalsIgnoreCase(s3)) {
+			System.out.println("Match");
+		}
+		else {
+			System.out.println("No Match");
+		}
+	}
+}

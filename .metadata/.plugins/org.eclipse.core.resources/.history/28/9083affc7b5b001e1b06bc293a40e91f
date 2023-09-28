@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class Random_Test {
+	public static void main(String[] args) {
+		int random = (int) (Math.random()*100 + 1);
+		int count = 0;
+		
+		//user input
+		System.out.println("Enter a number 1 to 100!");
+		Scanner input = new Scanner(System.in);
+		if(random != input.nextInt()) {
+			System.out.println("No match");
+			count++;
+			return;
+		} 
+		else {
+			System.out.println("Match");
+			count--;
+		}
+		
+		if(count <= 5) {
+			System.out.println("Fail!");
+			count = 0;
+		}
+		else {
+			System.out.println("Win!");
+			count = 0;
+		}
+	}
+}

@@ -1,0 +1,17 @@
+package Array_EX;
+
+public class A_EX_1 {
+	public static void main(String[] args) {
+		//reverse array
+		
+		int[] array = {1,2,3,4,5};
+		int num = 0;
+		int temp = 0;
+		
+		for(int i = array.length - 1; i > array.length; i--) {
+			System.out.println(array[i]);
+		}
+		
+		
+	}
+}

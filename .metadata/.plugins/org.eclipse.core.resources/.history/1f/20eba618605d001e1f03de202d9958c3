@@ -1,0 +1,21 @@
+package Method_EG;
+
+import java.util.Scanner;
+
+public class DelimeterWithScanner {
+	public static void main(String[] args) {
+		String input = "10 fish 20 fish green fish white fish";
+		Scanner sc = new Scanner(input);
+
+		while(sc.hasNext()) {
+			Scanner token = sc.useDelimiter(" ");
+			System.out.println(token);
+		}
+		
+		sc.close();
+		//output -- 10 20 green white
+		
+		System.out.println("Split with .next() method");
+		
+	}
+}

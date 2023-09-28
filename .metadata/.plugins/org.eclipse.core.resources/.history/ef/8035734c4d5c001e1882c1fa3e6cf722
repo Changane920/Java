@@ -1,0 +1,33 @@
+package Method_EX;
+
+import java.util.Scanner;
+
+public class M_EX_5 {
+	public static void main(String[] args) {
+		//Fahrenheit <--> Celcius
+		System.out.println("Fahrenheit <==> Celsius");
+		Scanner input1 = new Scanner(System.in);
+		String txt = input1.next();
+		
+		if(txt.toLowerCase() == "f") {
+			Fah_Cel();
+		}
+		else {
+			Cel_Fah();
+		}
+		input1.close();
+	}
+	
+	static void Fah_Cel() {
+		System.out.print("Enter a Fahrenheit number: ");
+		Scanner input = new Scanner(System.in);
+		double num1 = input.nextDouble();
+		
+		double result = 5/9 * (num1 - 32);
+		System.out.println("Fahrenheit: " + result);
+	}
+	
+	static void Cel_Fah() {
+		
+	}
+}

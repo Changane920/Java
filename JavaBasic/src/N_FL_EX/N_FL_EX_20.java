@@ -20,4 +20,16 @@ public class N_FL_EX_20 {
 			System.out.println();
 		}
 	}
+	/* output
+	 * A B C D E 
+	 * A B C D 
+	 * A B C 
+	 * A B 
+	 * A 
+	 * A 
+	 * A B 
+	 * A B C 
+	 * A B C D 
+	 * A B C D E
+	 */
 }
