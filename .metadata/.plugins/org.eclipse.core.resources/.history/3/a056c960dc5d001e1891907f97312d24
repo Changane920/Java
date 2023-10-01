@@ -1,0 +1,12 @@
+package Array_EX;
+
+import java.util.Arrays;
+
+public class A_EX_6_1 {
+	public static void main(String[] args) {
+		int[] array = {5,4,2,3,1};
+		Arrays.sort(array);
+		System.out.println(Arrays.toString(array));
+		
+	}
+}
