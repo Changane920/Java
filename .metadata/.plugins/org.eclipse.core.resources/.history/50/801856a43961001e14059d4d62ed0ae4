@@ -1,0 +1,13 @@
+package Array_EX;
+
+public class A_EX_10 {
+    static int temp = 1; 
+	public static void main(String[] args) {
+        int[] array = {5,10,4,5,11,10};
+        for(int i = 0; i < array.length; i++){
+            if(array[i] == array[temp++]){
+            	System.out.println(array[i] + " has a duplicate elment.");
+            }
+        }
+	}
+}

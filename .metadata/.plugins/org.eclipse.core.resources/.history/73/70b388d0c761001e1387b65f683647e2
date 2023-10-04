@@ -1,0 +1,18 @@
+package Recursive_EG;
+
+public class R_Bin_Num {
+	public static void main(String[] args) {
+		int num = R_Bin_Num(5);
+		System.out.println(num);
+	}
+
+	private static int R_Bin_Num(int num) {
+		if(num <= 1) {
+			return 1;
+		}
+		else {
+			return R_Bin_Num(num/=2) + 1;			
+		}
+	}
+	
+}

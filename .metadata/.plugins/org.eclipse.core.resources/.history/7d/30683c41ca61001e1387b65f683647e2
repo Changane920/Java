@@ -1,0 +1,13 @@
+package Array_EG;
+
+public class Stack_Implementation {
+	static String[] str = new String[5];
+	static int top = -1;
+	public static void main(String[] args) {
+		System.out.print("Data entered: ");
+		push("A");
+	}
+	static void push(String s) {
+		str[++top] = s;
+	}
+}

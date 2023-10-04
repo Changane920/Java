@@ -1,0 +1,28 @@
+package FL_EX;
+
+import java.util.Scanner;
+
+public class Login_Attempt {
+	
+	static String uname, upass;
+	static int count = 0;
+	
+	public static void main(String[] args) {
+		String name = "chan";
+		String pass = "chan12";
+		
+		validation(name, pass);
+	}
+	static void validation(String name, String pass) {
+		Scanner sc = new Scanner(System.in);
+		
+		do {
+			System.out.print("Enter a name: ");
+			uname = sc.next();
+			System.out.print("Enter a password: ");
+			upass = sc.next();
+			count++;
+			
+		} while (count < 5 && (!uname.equals(name) && !upass.equals(pass)));
+	}
+}

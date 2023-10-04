@@ -1,6 +1,0 @@
-public class Random_Test {
-	public static void main(String[] args) {
-		int random = (int) (Math.random()*100 + 1);
-		System.out.println(random);
-	}
-}

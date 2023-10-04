@@ -1,0 +1,12 @@
+package Array_EX;
+
+public class A_EX_11 {
+	public static void main(String[] args) {
+		String str = "This is a word.";
+		char[] c_array = new char[str.length()];
+		for(int i = 0; i < c_array.length; i++) {
+			c_array[i] = str.substring(i, i+1).charAt(0);
+		}
+		System.out.println(str);
+	}
+}

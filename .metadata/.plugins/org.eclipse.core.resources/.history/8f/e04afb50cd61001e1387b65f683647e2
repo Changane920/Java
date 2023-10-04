@@ -1,0 +1,14 @@
+package Array_EG;
+
+import java.util.Stack;
+
+public class stack_class {
+	public static void main(String[] args) {
+		Stack<String> s = new Stack<String>();
+		s.push("A");
+		s.push("B");
+		System.out.println("Inserted array: " + s);
+		String top = s.peek();
+		System.out.println(top);
+	}
+}

@@ -1,6 +1,6 @@
 //org.eclipse.ui.commands/state/org.eclipse.ui.navigator.resources.nested.changeProjectPresentation/org.eclipse.ui.commands.radioState=false
 ColorsAndFontsPreferencePage.expandedCategories=Torg.eclipse.debug.ui.presentation\tTorg.eclipse.jdt.ui.presentation\tTterminal.views.theme.category
-ColorsAndFontsPreferencePage.selectedElement=Forg.eclipse.jdt.ui.PropertiesFileEditor.textfont
+ColorsAndFontsPreferencePage.selectedElement=Forg.eclipse.jdt.ui.editors.textfont
 PLUGINS_NOT_ACTIVATED_ON_STARTUP=;org.eclipse.m2e.discovery;
 eclipse.preferences.version=1
 org.eclipse.cdt.internal.ui.compare.AsmMergeViewer=1|Consolas|10.0|0|WINDOWS|1|0|0|0|0|0|0|0|0|1|0|0|0|0|Consolas;
@@ -15,11 +15,11 @@ org.eclipse.debug.ui.consoleFont=1|CaskaydiaCove NF SemiBold|12.0|0|WINDOWS|1|-1
 org.eclipse.egit.ui.CommitMessageEditorFont=1|Consolas|10.0|0|WINDOWS|1|0|0|0|0|0|0|0|0|1|0|0|0|0|Consolas;
 org.eclipse.egit.ui.CommitMessageFont=1|Consolas|10.0|0|WINDOWS|1|0|0|0|0|0|0|0|0|1|0|0|0|0|Consolas;
 org.eclipse.egit.ui.DiffHeadlineFont=1|Consolas|10.0|0|WINDOWS|1|0|0|0|0|0|0|0|0|1|0|0|0|0|Consolas;
-org.eclipse.jdt.internal.ui.compare.JavaMergeViewer=1|Cascadia Code SemiBold|12.0|0|WINDOWS|1|-16|0|0|0|600|0|0|0|0|3|2|1|49|Cascadia Code SemiBold;
+org.eclipse.jdt.internal.ui.compare.JavaMergeViewer=1|Cascadia Mono|12.0|0|WINDOWS|1|-16|0|0|0|400|0|0|0|0|3|2|1|49|Cascadia Mono;
 org.eclipse.jdt.internal.ui.compare.PropertiesFileMergeViewer=1|Consolas|10.0|0|WINDOWS|1|0|0|0|0|0|0|0|0|1|0|0|0|0|Consolas;
 org.eclipse.jdt.ui.ColoredLabels.match_highlight=60,33,99
 org.eclipse.jdt.ui.PropertiesFileEditor.textfont=1|Consolas|10.0|0|WINDOWS|1|0|0|0|0|0|0|0|0|1|0|0|0|0|Consolas;
-org.eclipse.jdt.ui.editors.textfont=1|Cascadia Code SemiBold|12.0|0|WINDOWS|1|-16|0|0|0|600|0|0|0|0|3|2|1|49|Cascadia Code SemiBold;
+org.eclipse.jdt.ui.editors.textfont=1|Cascadia Mono|12.0|0|WINDOWS|1|-16|0|0|0|400|0|0|0|0|3|2|1|49|Cascadia Mono;
 org.eclipse.jface.textfont=1|Consolas|10.0|0|WINDOWS|1|0|0|0|0|0|0|0|0|1|0|0|0|0|Consolas;
 org.eclipse.mylyn.wikitext.ui.presentation.textFont=1|Consolas|10.0|0|WINDOWS|1|0|0|0|0|0|0|0|0|1|0|0|0|0|Consolas;
 org.eclipse.ui.commands=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<org.eclipse.ui.commands>\r\n<keyBinding commandId\="net.sourceforge.vrapper.eclipse.commands.toggle" contextId\="org.eclipse.ui.textEditorScope" keyConfigurationId\="kg.totality.core.insert_mode" keySequence\="J K"/>\r\n<keyBinding commandId\="net.sourceforge.vrapper.eclipse.commands.toggle" contextId\="org.eclipse.ui.contexts.window" keyConfigurationId\="org.eclipse.ui.defaultAcceleratorConfiguration" keySequence\="CTRL+SPACE"/>\r\n<keyBinding contextId\="org.eclipse.ui.contexts.dialogAndWindow" keyConfigurationId\="org.eclipse.ui.defaultAcceleratorConfiguration" keySequence\="CTRL+SPACE"/>\r\n<keyBinding commandId\="org.eclipse.ui.edit.text.contentAssist.proposals" contextId\="org.eclipse.ui.contexts.window" keyConfigurationId\="org.eclipse.ui.defaultAcceleratorConfiguration" keySequence\="CTRL+SPACE"/>\r\n</org.eclipse.ui.commands>
@@ -45,13 +45,13 @@ org.eclipse.ui.ide.systemDefault.org.eclipse.egit.ui.IgnoredResourceBackgroundCo
 org.eclipse.ui.ide.systemDefault.org.eclipse.egit.ui.IgnoredResourceForegroundColor=120,120,120
 org.eclipse.ui.ide.systemDefault.org.eclipse.egit.ui.UncommittedChangeBackgroundColor=47,47,47
 org.eclipse.ui.ide.systemDefault.org.eclipse.egit.ui.UncommittedChangeForegroundColor=114,157,186
-org.eclipse.ui.ide.systemDefault.org.eclipse.jdt.internal.ui.compare.JavaMergeViewer=1|Cascadia Code SemiBold|12.0|0|WINDOWS|1|-16|0|0|0|600|0|0|0|0|3|2|1|49|Cascadia Code SemiBold;
+org.eclipse.ui.ide.systemDefault.org.eclipse.jdt.internal.ui.compare.JavaMergeViewer=1|Cascadia Mono|12.0|0|WINDOWS|1|-16|0|0|0|400|0|0|0|0|3|2|1|49|Cascadia Mono;
 org.eclipse.ui.ide.systemDefault.org.eclipse.jdt.ui.ColoredLabels.inherited=143,143,191
 org.eclipse.ui.ide.systemDefault.org.eclipse.jdt.ui.ColoredLabels.match_highlight=206,92,0
 org.eclipse.ui.ide.systemDefault.org.eclipse.jdt.ui.ColoredLabels.writeaccess_highlight=255,128,128
 org.eclipse.ui.ide.systemDefault.org.eclipse.jdt.ui.Javadoc.backgroundColor=52,57,61
 org.eclipse.ui.ide.systemDefault.org.eclipse.jdt.ui.Javadoc.foregroundColor=238,238,238
-org.eclipse.ui.ide.systemDefault.org.eclipse.jdt.ui.editors.textfont=1|Cascadia Code SemiBold|12.0|0|WINDOWS|1|-16|0|0|0|600|0|0|0|0|3|2|1|49|Cascadia Code SemiBold;
+org.eclipse.ui.ide.systemDefault.org.eclipse.jdt.ui.editors.textfont=1|Cascadia Mono|12.0|0|WINDOWS|1|-16|0|0|0|400|0|0|0|0|3|2|1|49|Cascadia Mono;
 org.eclipse.ui.ide.systemDefault.org.eclipse.jface.REVISION_NEWEST_COLOR=75,44,3
 org.eclipse.ui.ide.systemDefault.org.eclipse.jface.REVISION_OLDEST_COLOR=154,113,61
 org.eclipse.ui.ide.systemDefault.org.eclipse.mylyn.tasks.ui.colors.category.gradient.end=136,137,133

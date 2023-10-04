@@ -1,0 +1,18 @@
+package Array_EX;
+
+import java.util.Arrays;
+
+public class A_EX_5_ {
+	public static void main(String[] args) {
+		int[] array = {1,2,3,4,5};
+		int[] array2 = new int[array.length - 1];
+		for(int i = 0; i < array.length; i++) {
+			if(i == 2) {
+				continue;
+			}
+			else
+				array2[i] = i;
+		}
+		Arrays.toString(array2);
+	}
+}

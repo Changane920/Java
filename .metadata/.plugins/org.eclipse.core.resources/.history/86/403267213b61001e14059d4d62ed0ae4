@@ -1,0 +1,12 @@
+package Array_EX;
+
+import java.util.Arrays;
+
+public class A_EX_11 {
+	public static void main(String[] args) {
+		String str = "This is a word.";
+		char[] c_array = str.toCharArray();
+		
+		Arrays.toString(c_array);
+	}
+}
