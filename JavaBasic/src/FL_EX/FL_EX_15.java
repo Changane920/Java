@@ -23,8 +23,5 @@ public class FL_EX_15 {
 				System.out.println(num + " is not a prime number.\n");
 			}
 		}
-
-		//wrong logic
-		System.out.println("another way to check prime number");
 	}
 }

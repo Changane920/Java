@@ -1,6 +1,6 @@
 eclipse.preferences.version=1
 overriddenByCSS=,xsltagAttributeValue,xsltagBorder,xsltagName,xsltagAttributeName,
-xsltagAttributeName=\#99B3FF | null | null | null | null | null
-xsltagAttributeValue=\#E6FF99 | null | null | null | null | null
-xsltagBorder=\#EDE9F6 | null | false | null | null | null
-xsltagName=\#EDE9F6 | null | false | null | null | null
+xsltagAttributeName=\#FFC66D | null | null | null | false | false
+xsltagAttributeValue=\#6897BB | null | null | null | null | null
+xsltagBorder=\#9876AA | null | null | null | false | false
+xsltagName=\#9876AA | null | null | null | false | false

@@ -1,8 +1,0 @@
-package Array_EX;
-
-public class A_EX_11 {
-	public static void main(String[] args) {
-		String str = "This is a word.";
-		System.out.println(str.substring(0,1));
-	}
-}
