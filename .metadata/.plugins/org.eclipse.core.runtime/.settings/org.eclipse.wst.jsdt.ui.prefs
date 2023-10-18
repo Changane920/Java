@@ -1,9 +1,9 @@
-CONTENT_ASSIST_BACKGROUND_COLOR=31,17,52
-CONTENT_ASSIST_FOREGROUND_COLOR=233,224,245
-content_assist_parameters_background=31,17,52
-content_assist_parameters_foreground=233,224,245
-content_assist_proposals_background=31,17,52
-content_assist_proposals_foreground=233,224,245
+CONTENT_ASSIST_BACKGROUND_COLOR=40,55,52
+CONTENT_ASSIST_FOREGROUND_COLOR=231,238,237
+content_assist_parameters_background=40,55,52
+content_assist_parameters_foreground=231,238,237
+content_assist_proposals_background=40,55,52
+content_assist_proposals_foreground=231,238,237
 eclipse.preferences.version=1
 java_bracket=169,183,198
 java_comment_task_tag=82,109,74

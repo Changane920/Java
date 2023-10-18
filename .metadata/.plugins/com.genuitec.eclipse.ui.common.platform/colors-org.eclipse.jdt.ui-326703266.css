@@ -19,14 +19,14 @@
 
 
 BulletListBlock > StyledText {
-background-color: #2e194d;
-color: #b398dd;
+background-color: #334743;
+color: #afc5c1;
 }
 
 FormatterPreferenceSectionComposite {
-background-color:#3c2163;
-color:#ebe4f6;
-swt-titlebar-color: #c7b3e6;
+background-color:#405954;
+color:#eaf0ef;
+swt-titlebar-color: #c4d4d1;
 }
 
 #BreadcrumbComposite > Composite,
@@ -45,6 +45,6 @@ swt-titlebar-color: #c7b3e6;
 * the background with the lighter color used for the background
 * of toolbars and make the foreground color brighter too.
 */
-background-color:#3c2163;
+background-color:#405954;
 color: white;
 }
