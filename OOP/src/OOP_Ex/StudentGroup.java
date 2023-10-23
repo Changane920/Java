@@ -28,9 +28,24 @@ public class StudentGroup {
 				sgroup[a].setScore(score);
 			}
 		}
-	}
+	}	
 	
-	public void printArray() {
+	public void sortArray(Student[] s, int ai) {
+		for(int i = 0; i < ai - 1; i++) {
+			for(int j = 0; j < ai - i - 1; j++) {
+				String fstr = String.valueOf(s[j].getId());
+				String sstr = String.valueOf(s[j+1].getId());
+				
+				if(fstr.compareTo(sstr) > 0) {
+					Student temp = s[j];
+					s[j] = s[j+1];
+					s[j+1] = temp;
+				}
+			}
+		}
+	}
+		
+	public void printArray() {		
 		System.out.println("Id\tName\tScore");
 		for(int i = 0; i < num; i++) {		
 			System.out.println(sgroup[i].getId() + "\t" + sgroup[i].getName() + "\t" + sgroup[i].getScore());
@@ -67,12 +82,16 @@ public class StudentGroup {
 				
 				s.updateScore("0",100,s.num);
 				s.updateScore("1",50.555,s.num);
+				
 			}
 			else {
+				s.sortArray(s.sgroup, s.num);
 				s.printArray();
 				throw new StringIndexOutOfBoundsException();
 			}
 		} while(uq == 'y');
+		
+		s.sortArray(s.sgroup, s.num);
 		
 		s.printArray();
 
