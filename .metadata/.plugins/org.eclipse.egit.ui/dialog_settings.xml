@@ -1,6 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<list key="RepositorySelectionPage.UsedUris">
+		<item value="file://D:\KBTC\JavaWS\Java\.git"/>
 		<item value="file://D:\KBTC\JavaWS\Java"/>
 	</list>
+	<list key="CommitDialog.authorValues">
+		<item value="Changane &lt;119436466+Changane920@users.noreply.github.com&gt;"/>
+	</list>
+	<list key="CommitDialog.committerValues">
+		<item value="Changane &lt;119436466+Changane920@users.noreply.github.com&gt;"/>
+	</list>
+	<section name="org.eclipse.egit.ui.internal.staging.StagingView">
+		<item key="MAIN_SASH_FORM_ORIENTATION_VERTICAL" value="true"/>
+		<item key="HORIZONTAL_SASH_FORM_WEIGHT" value="500,500"/>
+		<item key="STAGING_SASH_FORM_WEIGHT" value="500,500"/>
+		<item key="sortItemState" value="false"/>
+	</section>
+	<section name="GitCommitMessageComponent">
+		<list key="D:\KBTC\JavaWS\Java\.git">
+			<item value="false"/>
+			<item value="Changane &lt;119436466+Changane920@users.noreply.github.com&gt;"/>
+			<item value="u"/>
+			<item value="Changane &lt;119436466+Changane920@users.noreply.github.com&gt;"/>
+			<item value="612758b49bc7c7dcb6d7231eadb8706224efc678"/>
+			<item value="0"/>
+			<item value="false"/>
+			<item value=""/>
+		</list>
+	</section>
 </section>

@@ -6,7 +6,7 @@ public class DelimeterWithScanner {
 	public static void main(String[] args) {
 		String input = "10 fish 20 fish green fish white fish";
 		Scanner sc = new Scanner(input);
-		sc.useDelimiter("fish");
+		sc.useDelimiter(" ");
 
 		while(sc.hasNext()) {
 			System.out.println(sc.next());
@@ -19,7 +19,7 @@ public class DelimeterWithScanner {
 		Scanner sc2 = new Scanner(input);
 		
 		while(sc2.hasNext()) {
-			System.out.println(sc2.next());
+			System.out.print(sc2.next());
 		}
 	}
 }

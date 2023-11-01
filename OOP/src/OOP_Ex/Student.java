@@ -1,13 +1,14 @@
 package OOP_Ex;
 
 public class Student {
-	private String id, name;
+	private int id;
+	private String name;
 	private double score;
 	
-	public String getId() {
+	public int getId() {
 		return this.id;
 	}
-	public void setId(String s) {
+	public void setId(int s) {
 		this.id = s;
 	}
 	public String getName() {
@@ -23,26 +24,31 @@ public class Student {
 		this.score = s;
 	}
 	
-	public Student(String i, String n) {
+	public Student(int i, String n) {
 		this.name = n;
 		this.id = i;
 		this.score = -1;
 	}
-	public Student(String i, String n, double s) {
+	public Student(int i, String n, double s) {
 		this.name = n;
 		this.id = i;
 		this.score = s;
 	}
 	
-	public String withScore() {
-		return "id is " + this.id + ", name is " + this.name + ", score is " + this.score;
+	public Student withScore(Double nScore) {
+		return new Student(this.id,this.name,nScore);
+	}
+	
+	@Override
+	public String toString() {
+		return String.format("id: %d, name: %s, score: %s", id,name,score < 0 ?"No Score":score);
 	}
 	
 	public static void main(String[] args) {
-		Student s1 = new Student("s01","Mg Mg");
-		Student s2 = new Student("s02","Chochin",5);
+		Student s1 = new Student(0,"chan");
+		Student s2 = new Student(1,"myae",5);
 		
-		System.out.println(s1.withScore());
-		System.out.println(s2.withScore());
+		System.out.println(s1);
+		System.out.println(s2);
 	}
 }

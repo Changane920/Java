@@ -3,5 +3,6 @@ AbstractTextEditor.Color.Background.SystemDefault=false
 AbstractTextEditor.Color.SelectionBackground.SystemDefault=false
 AbstractTextEditor.Color.SelectionForeground.SystemDefault=false
 eclipse.preferences.version=1
+lineNumberRuler=false
 lineSpacing=20
 spellingEnabled=false
