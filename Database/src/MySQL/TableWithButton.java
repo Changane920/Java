@@ -107,7 +107,6 @@ public class TableWithButton implements ActionListener {
 					model.setRowCount(0);
 				} 
 				catch (SQLException e1) {
-					// TODO Auto-generated catch block
 					e1.printStackTrace();
 				}
 			} 
@@ -121,15 +120,21 @@ public class TableWithButton implements ActionListener {
 				icon = new ImageIcon(scaleImage);
 				
 				Object[] obj = {
-						"Id: ", id,
+						"Id: ", id, 
 						"Name: ", name,
-						"Mark: ", mark
+						"Mark: ", mark,
 				};
 				
 				int opt = JOptionPane.showConfirmDialog(null,obj,"Add Data",JOptionPane.OK_CANCEL_OPTION,JOptionPane.NO_OPTION,icon);
 				if(opt == JOptionPane.OK_OPTION) {
-					String query = "insert into mark values (" + Integer.parseInt(id.getText()) + ",\"" + name.getText() + "\"," + Double.parseDouble(mark.getText()) + ");";
-					st.executeUpdate(query);
+					pt = cn.prepareStatement("insert into mark values (?,?,?)");
+					
+					int id1 = Integer.valueOf(id.getText());
+					String name1 = String.valueOf(name.getText());
+					double mark1 = Double.valueOf(mark.getText());
+					
+					pt.setInt(1, id1); pt.setString(2, name1); pt.setDouble(3, mark1);
+					pt.executeUpdate();
 					JOptionPane.showMessageDialog(null, "Insert Complete!");
 				}
 				else {
@@ -149,13 +154,11 @@ public class TableWithButton implements ActionListener {
 					model.setRowCount(0);
 				} 
 				catch (SQLException e1) {
-					// TODO Auto-generated catch block
 					e1.printStackTrace();
 				}
 			}
 		} 
 		catch (ClassNotFoundException e1) {
-			// TODO Auto-generated catch block
 			e1.printStackTrace();
 		} 
 		catch (SQLException e1) {
