@@ -74,6 +74,7 @@ public class game extends JFrame implements ActionListener, MouseListener {
 	 * Create the frame.
 	 */
 	public game() {
+		setIconImage(Toolkit.getDefaultToolkit().getImage("image/puzzle(1).png"));
 		setTitle("Puzzle Sliding Game");
 		setResizable(false);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -87,7 +88,7 @@ public class game extends JFrame implements ActionListener, MouseListener {
 		contentPane.setLayout(null);
 
 		mainPanel = new JPanel();
-		mainPanel.setBackground(new Color(255, 255, 255));
+		mainPanel.setBackground(Color.LIGHT_GRAY);
 		mainPanel.setBounds(10, 52, 600, 600);
 		contentPane.add(mainPanel);
 
@@ -97,7 +98,7 @@ public class game extends JFrame implements ActionListener, MouseListener {
 
 		functionPanel = new JPanel();
 		functionPanel.setBackground(Color.GRAY);
-		functionPanel.setBounds(620, 363, 300, 289);
+		functionPanel.setBounds(620, 363, 289, 289);
 		contentPane.add(functionPanel);
 		functionPanel.setLayout(null);
 
@@ -160,7 +161,7 @@ public class game extends JFrame implements ActionListener, MouseListener {
 			}
 		});
 		btnBack.setBackground(new Color(255, 255, 255));
-		btnBack.setBounds(167, 243, 123, 35);
+		btnBack.setBounds(154, 243, 123, 35);
 		functionPanel.add(btnBack);
 
 		rdbEasy = new JRadioButton("Easy");
@@ -442,23 +443,20 @@ public class game extends JFrame implements ActionListener, MouseListener {
 				try {
 					Class.forName("com.mysql.cj.jdbc.Driver");
 					Connection cn = DriverManager.getConnection("jdbc:mysql://localhost:3306", "root", null);
-					System.out.println("Conenction successful!");
 
 					Statement st = cn.createStatement();
 					st.execute("use puzzleslide");
-					ResultSet rs = st.executeQuery("select * from player where name =\""+uName.getText()+"\"");
-						System.out.println("I am here");
-
-						if(!rs.next()) {
-							st.execute("insert into player (name,minute,second,level) values (\"" + uName.getText()
-							+ "\",'" + minute + "','" + second + "',\"" + level + "\")");
-							System.out.println("Insert Success!");							
-						}
-						else {
-							st.execute("update player set name = \"" + uName.getText() + "\", minute=" + minute
-									+ ",second=" + second + ",level=\"" + level + "\" where id = " + 1 + "");
-							System.out.println("Update success!");							
-						} 
+					ResultSet rs = st.executeQuery("select * from player where name =\"" + uName.getText() + "\"");
+					if (!rs.next()) {
+						st.execute("insert into player (name,minute,second,level) values (\"" + uName.getText() + "\",'"
+								+ minute + "','" + second + "',\"" + level + "\")");
+						System.out.println("Insert Success!");
+					} else {
+						int getId = rs.getInt("id");
+						st.execute("update player set name = \"" + uName.getText() + "\", minute=" + minute + ",second="
+								+ second + ",level=\"" + level + "\" where id = " + getId + "");
+						System.out.println("Update success!");
+					}
 					rs.close();
 					st.close();
 				} catch (SQLException | ClassNotFoundException e) {

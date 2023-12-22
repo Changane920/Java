@@ -51,8 +51,8 @@ public class playui extends JFrame implements MouseListener {
 	 */
 	public playui() {
 		setResizable(false);
-		setIconImage(Toolkit.getDefaultToolkit().getImage("C:\\Users\\Changane\\Downloads\\puzzle.png"));
-		setTitle("Image Box");
+		setIconImage(Toolkit.getDefaultToolkit().getImage("image/puzzle(1).png"));
+		setTitle("Feliz Arcade");
 		setBackground(Color.LIGHT_GRAY);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 1000, 750);
@@ -65,11 +65,11 @@ public class playui extends JFrame implements MouseListener {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 
-		JLabel lblNewLabel = new JLabel("Choose the image to play!");
-		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\Changane\\Downloads\\puzzle(1).png"));
+		JLabel lblNewLabel = new JLabel("Welcome to Feliz Arcade");
+		lblNewLabel.setIcon(new ImageIcon("image/puzzle(1).png"));
 		lblNewLabel.setBackground(SystemColor.activeCaption);
 		lblNewLabel.setForeground(new Color(0, 0, 0));
-		lblNewLabel.setFont(new Font("JetBrains Mono", Font.PLAIN, 26));
+		lblNewLabel.setFont(new Font("JetBrains Mono", Font.BOLD, 26));
 		lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
 		lblNewLabel.setBounds(266, 0, 454, 81);
 		contentPane.add(lblNewLabel);
@@ -191,7 +191,9 @@ public class playui extends JFrame implements MouseListener {
 		JButton btnLeaderBoard = new JButton("Leaderboard");
 		btnLeaderBoard.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				
+				dispose();
+				leaderboard showlb = new leaderboard();
+				showlb.setVisible(true);
 			}
 		});
 		btnLeaderBoard.setBackground(new Color(255, 255, 255));
